@@ -1,25 +1,42 @@
 ﻿open Sudoku
 
-[<EntryPoint>]
-let main argv = 
+let moeglKalender () =
+    printfn "Möglichkeiten Kalender Sudoku: %A" (Game.BruteForce.anzahl Beispiele.kalender)
 
-//    printfn "Möglichkeiten Kalender Sudoku: %A" (Game.BruteForce.anzahl Beispiele.kalender)
-//    printfn "Möglichkeiten Wiki Sudoku: %A" (Game.BruteForce.anzahl Beispiele.wiki)
+let kalenderMitStutzen () =
+    printfn "Möglichkeiten Kalender Sudoku nach stutzen: %A" (Game.MitStutzen.anzahl Beispiele.kalender)
+    Game.MitStutzen.loesungen Beispiele.kalender
+    |> Seq.head
 
+let moeglWikiStutzen () =
+    printfn "Möglichkeiten Wiki-Sudoku nach stutzen: %A" (Game.MitStutzen.anzahl Beispiele.wiki)
+
+let wikiFinal () =
+    Game.Final.loesungen Beispiele.wiki
+    |> Seq.head
+
+let loese alg =
     let watch = System.Diagnostics.Stopwatch ()
     printfn "searching for solutions..."
 
     watch.Start ()
-    let loesung = 
-        Beispiele.wiki
-        |> Game.Final.loesungen 
-        |> Seq.head
-
+    let loesung = alg ()
     watch.Stop()
     printfn "found in %.2fsek" (float watch.ElapsedMilliseconds / 1000.0)
 
     loesung
     |> Seq.iter (printfn "%A")
 
-    0 // return an integer exit code
+[<EntryPoint>]
+let main argv = 
+
+    moeglKalender ()
+
+    loese kalenderMitStutzen
+    
+    moeglWikiStutzen ()
+        
+    loese wikiFinal
+
+    0
 

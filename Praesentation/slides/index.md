@@ -9,39 +9,9 @@
 ## Spartakiade
 ![Spartakiade](./images/Spartakiade.png)
 
-### Programmieren mit FUN
+### Grundlagen der funktionalen Programmierung in F#
 
 Carsten König
-
-***
-
-### ein paar Zitate
-
-**Weil:** Das Internet hat immer Recht ...
-
-[Quelle Quora](https://www.quora.com/What-are-some-criticisms-of-functional-programming)
-
----
-
-> Functional programming is way too impractical. 
-
----
-
-> It’s really difficult to understand and, besides that, just kinda weird. 
-
----
-
-> No one uses FP in the real world.
-
----
-
-> Save yourself some time and headaches and just use *Java* (*C#*). 
-
----
-
-![Elfenbeinturm](./images/ivorytower.jpg)
-
-> Leave functional programming to the pointy-headed ivory-tower types.
 
 ***
 
@@ -130,10 +100,7 @@ Grundlagen in F#
 - Einführung in FP und F#
 - Viele kleine Übungen
 - Vorstellung Sudoku-Projekt
-- nach Zeit / Interesse
-  * Minieinführung CT / Funktoren
-  * Monaden
-  * wir spielen TDD
+- Fragen, nach Wunsch, Feierabend
 
 ***
 
@@ -196,6 +163,9 @@ Schreibe Funktionen
 
 Implementiere **Coin Change **
 
+Für eine durch ihren Wert gegebene Liste von Münzen und einen bestimmten Betrag soll
+eine Liste von möglichst wenigen Münzen berechnet werden, die den Betrag ergeben.
+
 Siehe `Uebungen/CoinChange.fsx`
 
 ---
@@ -240,6 +210,14 @@ gesucht: `'a list` mit Elementen `l` aus `ls` mit `p l = true`
 
 ---
 
+## foldr
+
+`foldR : ('a -> 's -> 's) -> 's -> 'a list -> 's`
+
+![foldr](./images/foldr.png)
+
+---
+
 ## Übung
 
 Implementiere jeweils mit `foldR`:
@@ -248,6 +226,14 @@ Implementiere jeweils mit `foldR`:
 - `or : bool list -> bool`
 - `any : ('a -> bool) -> 'a list -> bool`
 - `all : ('a -> bool) -> 'a list -> bool`
+
+---
+
+## foldl
+
+`foldL : ('s -> 'b -> 's) -> 'a -> 'b list -> 'a`
+
+![foldl](./images/foldl.png)
 
 ---
 

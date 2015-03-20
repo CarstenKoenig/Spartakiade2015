@@ -49,65 +49,9 @@
 
 <p><img src="./images/Spartakiade.png" alt="Spartakiade" /></p>
 
-<h3>Programmieren mit FUN</h3>
+<h3>Grundlagen der funktionalen Programmierung in F#</h3>
 
 <p>Carsten König</p>
-
-</section>
-
-</section>
-
-<section >
-
-<section >
-
-<h3>ein paar Zitate</h3>
-
-<p><strong>Weil:</strong> Das Internet hat immer Recht ...</p>
-
-<p><a href="https://www.quora.com/What-are-some-criticisms-of-functional-programming">Quelle Quora</a></p>
-
-</section>
-
-<section >
-
-<blockquote>
-  <p>Functional programming is way too impractical.</p>
-</blockquote>
-
-</section>
-
-<section >
-
-<blockquote>
-  <p>It’s really difficult to understand and, besides that, just kinda weird.</p>
-</blockquote>
-
-</section>
-
-<section >
-
-<blockquote>
-  <p>No one uses FP in the real world.</p>
-</blockquote>
-
-</section>
-
-<section >
-
-<blockquote>
-  <p>Save yourself some time and headaches and just use <em>Java</em> (<em>C#</em>).</p>
-</blockquote>
-
-</section>
-
-<section >
-
-<p><img src="./images/ivorytower.jpg" alt="Elfenbeinturm" /></p>
-
-<blockquote>
-  <p>Leave functional programming to the pointy-headed ivory-tower types.</p>
-</blockquote>
 
 </section>
 
@@ -250,12 +194,7 @@
 <li>Einführung in FP und F#</li>
 <li>Viele kleine Übungen</li>
 <li>Vorstellung Sudoku-Projekt</li>
-<li>nach Zeit / Interesse
-<ul>
-<li>Minieinführung CT / Funktoren</li>
-<li>Monaden</li>
-<li>wir spielen TDD</li>
-</ul></li>
+<li>Fragen, nach Wunsch, Feierabend</li>
 </ul>
 
 </section>
@@ -343,6 +282,9 @@
 
 <p>Implementiere <strong>Coin Change </strong></p>
 
+<p>Für eine durch ihren Wert gegebene Liste von Münzen und einen bestimmten Betrag soll
+eine Liste von möglichst wenigen Münzen berechnet werden, die den Betrag ergeben.</p>
+
 <p>Siehe <code>Uebungen/CoinChange.fsx</code></p>
 
 </section>
@@ -415,6 +357,16 @@ gesucht: <code>'a list</code> mit Elementen <code>l</code> aus <code>ls</code> m
 
 <section >
 
+<h2>foldr</h2>
+
+<p><code>foldR : ('a -&gt; 's -&gt; 's) -&gt; 's -&gt; 'a list -&gt; 's</code></p>
+
+<p><img src="./images/foldr.png" alt="foldr" /></p>
+
+</section>
+
+<section >
+
 <h2>Übung</h2>
 
 <p>Implementiere jeweils mit <code>foldR</code>:</p>
@@ -425,6 +377,16 @@ gesucht: <code>'a list</code> mit Elementen <code>l</code> aus <code>ls</code> m
 <li><code>any : ('a -&gt; bool) -&gt; 'a list -&gt; bool</code></li>
 <li><code>all : ('a -&gt; bool) -&gt; 'a list -&gt; bool</code></li>
 </ul>
+
+</section>
+
+<section >
+
+<h2>foldl</h2>
+
+<p><code>foldL : ('s -&gt; 'b -&gt; 's) -&gt; 'a -&gt; 'b list -&gt; 'a</code></p>
+
+<p><img src="./images/foldl.png" alt="foldl" /></p>
 
 </section>
 
