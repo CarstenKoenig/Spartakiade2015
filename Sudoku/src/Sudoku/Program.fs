@@ -3,8 +3,8 @@
 [<EntryPoint>]
 let main argv = 
 
-    printfn "Möglichkeiten Kalender Sudoku: %A" (Game.BruteForce.anzahl Beispiele.kalender)
-    printfn "Möglichkeiten Wiki Sudoku: %A" (Game.BruteForce.anzahl Beispiele.wiki)
+//    printfn "Möglichkeiten Kalender Sudoku: %A" (Game.BruteForce.anzahl Beispiele.kalender)
+//    printfn "Möglichkeiten Wiki Sudoku: %A" (Game.BruteForce.anzahl Beispiele.wiki)
 
     let watch = System.Diagnostics.Stopwatch ()
     printfn "searching for solutions..."
