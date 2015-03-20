@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Sudoku.Lib", "src\Sudoku.Lib\Sudoku.Lib.fsproj", "{7B930C7F-8C55-4F60-97EF-3E038BCBF79D}"
+EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Sudoku.Tests", "src\Sudoku.Tests\Sudoku.Tests.fsproj", "{071186AD-CFA2-4889-96A0-C8B6E2D88A91}"
+EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Sudoku", "Sudoku\Sudoku.fsproj", "{3546F662-8BA5-4F4B-AE0D-59C378648486}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{071186AD-CFA2-4889-96A0-C8B6E2D88A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071186AD-CFA2-4889-96A0-C8B6E2D88A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071186AD-CFA2-4889-96A0-C8B6E2D88A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071186AD-CFA2-4889-96A0-C8B6E2D88A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3546F662-8BA5-4F4B-AE0D-59C378648486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3546F662-8BA5-4F4B-AE0D-59C378648486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3546F662-8BA5-4F4B-AE0D-59C378648486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3546F662-8BA5-4F4B-AE0D-59C378648486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B930C7F-8C55-4F60-97EF-3E038BCBF79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B930C7F-8C55-4F60-97EF-3E038BCBF79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B930C7F-8C55-4F60-97EF-3E038BCBF79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B930C7F-8C55-4F60-97EF-3E038BCBF79D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
