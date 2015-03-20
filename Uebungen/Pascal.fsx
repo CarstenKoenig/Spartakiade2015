@@ -1,13 +1,7 @@
 #r "FsCheck.dll"
 
 let pascalSeq : int list seq =
-    let gen row =
-        let next =
-            Seq.zip (0::row) (row@[0])
-            |> List.ofSeq
-            |> List.map (fun (a,b) -> a+b)
-        Some (row, next)
-    Seq.unfold gen [1]
+  failwith "please implement me"
 
 
 // ************* TESTS ******************

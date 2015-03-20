@@ -13,26 +13,8 @@ type Loesungen =
   | Alles
   | EineVon of Loesung list
 
-let loeseLinear (a : float, b : float) : Loesungen =
-  if nahe0 a && nahe0 b then Alles
-  elif nahe0 a then Keine
-  else EineVon [-b / a]
-
-// sollte ohne `if a = 0 ...` vorgeführt werden - (Quickcheck)
 let loese ((a,b,c) : QuadGleichung) : Loesungen =
-    if nahe0 a then loeseLinear (b,c) else
-    let nenner = 2.0*a
-    let diskriminante = b*b - 4.0*a*c
-    match diskriminante with
-      | d when nahe0 d -> EineVon [-b / nenner]
-      | d when d < 0.0 -> Keine
-      | d ->
-        let wurzel = sqrt d
-        EineVon [(-b-wurzel)/nenner; (-b+wurzel)/nenner]     
-
-loese (2.0, -10.0, 12.0)
-
-
+  failwith "please implement me"
 
 // ************* TESTS ******************
 
