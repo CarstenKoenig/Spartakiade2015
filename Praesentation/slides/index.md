@@ -13,6 +13,8 @@
 
 Carsten König
 
+Material / Slides: [https://github.com/CarstenKoenig/Spartakiade2015.git](https://github.com/CarstenKoenig/Spartakiade2015.git)
+
 ***
 
 ### Was ist überhaupt eine *funktionale* Sprache?
